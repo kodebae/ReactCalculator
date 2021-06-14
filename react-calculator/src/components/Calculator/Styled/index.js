@@ -18,7 +18,7 @@ export const Screen = styled.div`
     justify-content: space-around;
     flex-direction: column;
     padding: 10px;
-    word-wrap: break-word;
+    word-wrap: break-word; 
     word-break: break-all;
     text-align: right;
     border-top-left-radius: 10px;
@@ -42,16 +42,27 @@ export const Button = styled.button`
     outline: none;
     background-color: rgba(255, 255, 252, 0.75);
     &:hover{
-        background-color: rgba(255, 255, 252, 0.9);
+        background-color: rgba(255, 255, 255, 1.0);
     } 
-/* Arrow funtion to control grid-span button sizing */
+/* Arrow funtion to define grid-span button sizing */
 
 ${({gridSpan}) => gridSpan && `grid-column: span ${gridSpan};`}
 
-/* Arrow funtion to control background color of operation button */
+/* Arrow funtion to define background color of operation buttons */
 
-${({operation}) => operation && `background-color: #CAFFBF`}
+${({operation}) => operation && `background-color: #CAFFBF;`}
 
+/* Arrow funtion to define background color of control buttons */
+
+${({control}) => control && `background-color: #9BF6FF;`}
+
+/* Arrow funtion to define background color of equals button */
+
+${({equals}) => equals && `border-bottom-right-radius: 10px; background-color: #CAFFBF;`}
+
+/* Arrow funtion to define background color of decimal button */
+
+${({period}) => period && `border-bottom-left-radius: 10px; background-color: #9BF6FF;`}
 `
 
 
