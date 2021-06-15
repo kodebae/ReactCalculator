@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {Container, Screen, Previous, Current, Button} from './Styled';
 
-// Functional component for the calculator
+// The functional component for the calculator. 
 // Uses React Hook 'useState' to manage the state of stored values. Values are strings so initial state is an empty string. 
 
 export default function Calculator(){
@@ -32,7 +32,7 @@ export default function Calculator(){
         setPrevious('')
         setOperation('')
 
-    } // Function to delete the entire screen with one click. This function resets all of the states back to an empty string.
+    } // Function to delete the entire screen with one click. This function resets all of the states back to an empty string to delete everything.
 
 
     const chooseOperation = (el) => {
@@ -52,7 +52,7 @@ export default function Calculator(){
 
     const equals = () => {
         let value = compute();
-        if(value == undefined || value == null) return
+        if(value === undefined || value === null) return
 
             setCurrent(value)
             setPrevious('')
@@ -63,9 +63,33 @@ export default function Calculator(){
 
 
     const compute = () => {
+        let result
+        let previousNumber = parseFloat(previous)
+        let currentNumber = parseFloat(current)
+
+        if(isNaN(previousNumber) || isNaN(currentNumber)) return
+
+        switch(operation){
+            case '÷':
+                result = previousNumber / currentNumber;
+                break;
+            case '×':
+                result = previousNumber * currentNumber;
+                break;        
+            case '+':
+                result = previousNumber + currentNumber;
+                break;
+            case '-':
+                result = previousNumber - currentNumber;
+                break;  
+            default: 
+                return      
+        }
+
+        return result;
 
 
-    } // The mathmatical computation of equations. 
+    } // The mathmatical computation of equations. 'parseFloat' converts a string to a decimal/float number data type. Will not return anything other than a number. Has a default return for edgecases. Returns the computed result.
 
 
     return(
