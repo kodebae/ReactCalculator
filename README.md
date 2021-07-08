@@ -1,9 +1,8 @@
 # React-Calculator
 This React calculator utilizes the compute function and styled components to make a fully functional and visually styled calculator. Styled with "Styled Components". 
 
-## Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Test the deployed version of the app here.
+https://react-calculator-kodebae.netlify.app/
 
 ## Available Scripts
 
