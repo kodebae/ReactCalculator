@@ -11,6 +11,7 @@ export const Container = styled.div`
     box-shadow: 2px 2px 10px #FFFFFC;
     border-radius: 10px;
 `
+
 export const Screen = styled.div`
     grid-column: 1 / -1;
     background-color: rgba(255, 173, 173, 0.75);

@@ -17,6 +17,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media screen and (max-width: 768px){
+  body{
+   background: white;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
