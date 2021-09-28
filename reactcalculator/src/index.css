@@ -18,13 +18,15 @@ body {
 }
 
 @media screen and (max-width: 768px){
-  body{
+  body {
    background: white;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
    height: 100vh;
-   display: flex;
-   flex-direction: column;
+   width: 80%;
   }
-}
+} /*media query end*/
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
