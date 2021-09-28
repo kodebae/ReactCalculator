@@ -24,7 +24,7 @@ body {
    margin-right: auto;
    display: block;
    height: 100vh;
-   /* width: 50%; */
+   width: 80vw;
   }
 } /*media query end*/
 
