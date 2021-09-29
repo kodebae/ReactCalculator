@@ -10,6 +10,15 @@ export const Container = styled.div`
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
     box-shadow: 2px 2px 10px #FFFFFC;
     border-radius: 10px;
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) { 
+        .Container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+    }
 `
 
 export const Screen = styled.div`

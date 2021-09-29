@@ -17,16 +17,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media screen and (max-width: 786px){
+/* @media screen and (max-width: 786px){
   body {
    background: white;
    display: flex;
-   width: 100%;
+   width: auto;
    align-items: center;
    justify-content: center;
    overflow: hidden;
   }
-} /*media query end*/
+} media query end */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
